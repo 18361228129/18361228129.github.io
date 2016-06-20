@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>纪念长征胜利80周年</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 500px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 500px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 特性 */
+
+        .feature-divider {
+            margin: 40px 0;
+        }
+
+        .feature {
+            padding: 30px 0;
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">纪念长征胜利80周年</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">主要战役</a></li>
+                <li><a href="#summary-container">民族英魂</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">图说长征<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">图文1</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">图文2</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">图文3</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-opera">图文4</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-ie">图文5</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-cao">图文6</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于长征</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+        <li data-target="#ad-carousel" data-slide-to="5"></li>
+        <li data-target="#ad-carousel" data-slide-to="6"></li>
+        <li data-target="#ad-carousel" data-slide-to="7"></li>
+        <li data-target="#ad-carousel" data-slide-to="8"></li>
+        <li data-target="#ad-carousel" data-slide-to="9"></li>
+        <li data-target="#ad-carousel" data-slide-to="10"></li>
+        <li data-target="#ad-carousel" data-slide-to="11"></li>
+        <li data-target="#ad-carousel" data-slide-to="12"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/2.png" alt="1 slide">
+        </div>
+        <div class="item">
+            <img src="images/10.png" alt="2 slide">
+        </div>
+        <div class="item">
+            <img src="images/3.png" alt="3 slide">
+        </div>
+        <div class="item">
+            <img src="images/12.png" alt="4 slide">
+        </div>
+        <div class="item">
+            <img src="images/4.png" alt="5 slide">
+        </div>
+        <div class="item">
+            <img src="images/5.png" alt="1 slide">
+        </div>
+        <div class="item">
+            <img src="images/13.png" alt="2 slide">
+        </div>
+        <div class="item">
+            <img src="images/6.png" alt="3 slide">
+        </div>
+        <div class="item">
+            <img src="images/8.png" alt="4 slide">
+        </div>
+        <div class="item">
+            <img src="images/7.png" alt="5 slide">
+        </div>
+        <div class="item">
+            <img src="images/1.png" alt="3 slide">
+        </div>
+        <div class="item">
+            <img src="images/9.png" alt="4 slide">
+        </div>
+        <div class="item">
+            <img src="images/11.png" alt="5 slide">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+            class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row" id="summary-container">
+    <h1>民族英魂</h1>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/mao.jpg" alt="chrome">
+
+            <h2>毛泽东</h2>
+
+            <p>毛泽东（1893年12月26日－1976年9月9日），字润之（原作咏芝，后改润芝），笔名子任。湖南湘潭人。诗人，伟大的马克思主义者，无产阶级革命家、战略家和理论家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人。</p>
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=pHaOdDlJQ0yQaZXsGlQFMgNXvOxHxnHCjoMF-GoF4cley83o2dTUHgCgx5-E8h2cNSYaZM8gwjU-7uC04_ysxM2MCjuh4rKtk4LqJtPb7kq" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/zhou.jpg" alt="firefox">
+
+            <h2>周恩来</h2>
+
+            <p>周恩来（1898～1976），字翔宇，曾用名伍豪等，原籍浙江绍兴，生于江苏淮安。伟大的马克思列宁主义者，中国无产阶级革命家、政治家、军事家、外交家，中国共产党和中华人民共和国的主要领导人，中国人民解放军主要创建人和领导人。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=IL0ryv5sRaE04Izb-88am-Il7zKmqSSHZRvSs9lDsuDE2014BMaGYqMc_1b3k_BuZfOhSlp1hO_YtIlZ_ZdM9a" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/liu.jpg" alt="safari">
+
+            <h2>刘少奇</h2>
+
+            <p>刘少奇，1898年11月24日生于湖南省宁乡县，伟大的马克思主义者，伟大的无产阶级革命家、政治家、理论家，党和国家主要领导人之一，中华人民共和国开国元勋，是以毛泽东同志为核心的党的第一代中央领导集体的重要成员。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=OkLTs973puFhG3y965NT15cMpP6WqCMawnbhOVxZSIPICf1ZKc5dqg-Te9PyS1hyaXSnfrnH9dYBc3gQFq2rra" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/zhu.jpg" alt="safari1">
+
+            <h2>朱德</h2>
+
+            <p>朱德（1886年－1976），字玉阶，原名朱代珍，曾用名朱建德，伟大的马克思主义者，无产阶级革命家、政治家和军事家，中国共产党、中国人民解放军和中华人民共和国的主要缔造者和领导人之一。中华人民共和国十大元帅之首。
+</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=wwxFEo0ZwMHl3g3WOnT1H1f5ihV6ETddD9EZcOROeyUC3o_x9ReTx82_GR8oDDGcn2Ot-u-DmaHvgfakm6Hdta" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/chen.jpg" alt="safari1">
+
+            <h2>陈云</h2>
+
+            <p>陈云（1905.06.13－1995.04.10），伟大的无产阶级革命家、政治家，杰出的马克思主义者，中国社会主义经济建设的开创者和奠基人之一，党和国家久经考验的卓越领导人，是以毛泽东同志为核心的党的第一代中央领导集体和以邓小平同志为核心的党的第二代中央领导集体的重要成员。</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=li_msl4RBeqwEmHZMzYzL6mx1LU_0IOgTKNeO27YXUu75Ewfya_rH58g-yvYeKjX8KOHz2fjy0aTYiyF2kvweZKkRcZ1g5w6RZRMNN_kq0a" role="button">了解更多</a></p>
+        </div>
+        <div class="col-md-4">
+            <img class="img-circle" src="images/deng.jpg" alt="safari1">
+
+            <h2>邓小平</h2>
+
+            <p>邓小平（1904～1997），四川人。邓小平是中国共产党第二代领导核心领导者，伟大的马克思主义者，无产阶级革命家、政治家、军事家、外交家，中国共产党、中国人民解放军、中华人民共和国的主要领导人之一，中国社会主义改革开放和现代化建设的总设计师，邓小平理论的创立者。
+</p>
+
+            <p><a class="btn btn-default" href="http://baike.baidu.com/link?url=nC-rcuDTKa9XXShev4n_ocpoLWsvfXNWpn_LzedpC_9HneZ9sn6IAMeWIzsEMbBug1I8HMLTgR0hhk0D3JhoZfbtnYO0hk6gP_U2RquNYvG" role="button">了解更多</a></p>
+        </div>
+    </div>
+
+    <!-- 特性 -->
+
+    <hr class="feature-divider">
+
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">图文1</a></li>
+        <li><a href="#tab-firefox" role="tab" data-toggle="tab">图文2</a></li>
+        <li><a href="#tab-safari" role="tab" data-toggle="tab">图文3</a></li>
+        <li><a href="#tab-opera" role="tab" data-toggle="tab">图文4</a></li>
+        <li><a href="#tab-ie" role="tab" data-toggle="tab">图文5</a></li>
+        <li><a href="#tab-cao" role="tab" data-toggle="tab">图文6</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2>红9军团部分干部合影</h2>
+
+
+                    <p class="lead">红军长征中（1935年3月至5月）单独行动的红9军团部分干部到达陕北后于延安合影（后排左起第5人为军团长罗炳辉、前排左起第3人为军团政治委员何长工）。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t1.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t2.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+					<h2 class="feature-heading"><span class="text-muted">红4方面军总指挥部住过的旧址</span></h2>
+
+                    <p class="lead">红4方面军总指挥部于1936年9月在甘肃省岷县三十里铺住过的旧址。</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading"><span class="text-muted">强渡大渡河</span></h2>
+
+                    <p class="lead">“强渡大渡河”是长征途中的一次著名战斗。孙继先率17勇士强渡大渡河，在插翅难飞的天险防线上，打开一个缺口。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t3.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-opera">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t4.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading"><span class="text-muted">四渡赤水</span>
+                    </h2>
+
+                    <p class="lead">发源于云贵交界山区的赤水河，蜿蜒穿行于川、黔、滇三省边界的崇山峻岭之间，北流汇入长江。1935年1月29日至3月22日，中央红军4次往来跨过这条河，进行大小战斗30多次，这就是四渡赤水战役。25年后，毛泽东对来访的英国名将蒙哥马利说，四渡赤水是他的得意之笔。</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2>红军走过的水草地</h2>
+
+                    <p class="lead">1935年8月上旬，中共中央决定恢复红军第一方面军番号，周恩来任司令员兼政治委员。为了继续贯彻中共中央的北上方针，中革军委决定进取甘肃南部的夏河、洮河流域。8月15日，红军总司令朱德、总政治委员张国焘率领由第5、第9、第31、第32、第33军组成的左路军，从卓克基地区出发，向阿坝地区开进；21日，前敌总指挥部率领由第1、第3、第4、第30军组成的右路军，从毛儿盖地区出发，向班佑、巴西开进。中共中央、中革军委随右路军行动。红军指战员历经艰辛，通过人迹罕至、气候变化无常的茫茫草地，左路军先头纵队于20日到达阿坝地区。右路军于8月27日到达班佑、巴西地区。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t6.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-cao">
+            <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2>巧渡金沙江</span></h2>
+
+                    <p class="lead">金沙江位于长江的上游。它穿行在川滇边界的深山狭谷间，江面宽阔，水急浪大。如果红军过不去江，就有被敌人压进深山狭谷，遭致全军覆灭的危险。当红军大队人马向金沙江挺进时，蒋介石如梦初醒恍然大悟，认定红军的目的既不在贵阳，也不在昆明，而是“必渡金沙江无疑”。1935年4月28日，他下达命令，控制渡口，毁船封江。就在红军进抵金沙江前夕，江边的敌人已将所有船只掠到北岸了。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="images/t5.jpg"
+                         alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- 关于 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于长征</h4>
+                </div>
+                <div class="modal-body">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;1934年10月，由于博古、李德等人左倾冒险主义的错误领导，以及敌强我弱，红军先后逃离追踪。中央革命根据地（亦称中央苏区）第五次反“围剿”战争遭到失败，红军第一方面军（中央红军）主力开始长征，同时留下部分红军就地坚持游击战争。8月，中共中央和中央军委为了给中央红军战略转移探索道路，命令红六军团撤离湘赣苏区，到湘中发展游击战争。10月，红六军团与红三军（后恢复红二军团番号）会合，并创建了湘鄂川苏区。</br>
+
+　　1934年10月上旬，中央红军主力各军团分别集结陆续出发，中共中央和红军总部及直属纵队离开江西瑞金。10月21日，中央红军从赣县王母渡至信丰县新田间突破国民党军第一道封锁线，沿粤赣边、湘粤边、湘桂边西行，至11月15日突破了国民党军第二、三道封锁线；然而李德等领导人一味退却，消极避战，使红军继续处于不利地位。中央军委决定从兴安、全州之间抢渡湘江，经浴血奋战，于12月1日渡过湘江（即第四道封锁线），由于连续苦战，红军由8万余人锐减5万余人，剩余3万余人。12月中旬，抵达湘黔边时，毛泽东主力军队放弃原定进入湘西与第二、六军团会合的计划；28日，中共中央政治局在黎平开会，接受了毛泽东的主张，决定向以遵义为中心的川黔边地区前进，使红军避免了覆亡的危险。</br>
+
+　　1935年1月7日，红军占领遵义。1月15～17日，中共中央在遵义举行了政治局扩大会议，着重总结了第五次反“围剿”失败的经验教训，纠正了王明“左”倾冒险主义在军事上的错误，确立了以毛泽东为代表的中共中央的正确领导，　制定了红军之后的战略方针，　从而在最危险的关头挽救了红军和中国共产党。 这次会议是中国共产党和工农红军历史上一个伟大的转折点，是中国共产党从幼稚走向成熟的标志。3月，组成了实际上以毛泽东为首，周恩来、王稼祥参加的三人军事指挥小组。他们以中共中央、中央军委的名义指挥红军的行动。</br>
+
+　　遵义会议后，鉴于川敌布防严密，中央红军确定撤离遵义后，在川黔滇边和贵州省内迂回穿插。特别是在四渡赤水的过程中，中央红军灵活机动地创造战机，运动作战，各个歼敌，以少胜多，从而变被动为主动。随后出敌不意，主力南渡乌江，直逼贵阳，迅即西进，4月下旬以一部在翼侧策应。5月初，抢渡金沙江，摆脱了几十万国民党军的围追堵截，取得了战略转移中具有决定意义的胜利。由于执行了正确的民族政策，红军顺利通过大凉山彝族区。接着强渡大渡河，飞夺泸定桥，翻越终年积雪的夹金山。6月中旬，与红四方面军在懋功会师。</br>
+
+　　红四方面军原在川陕根据地，为了向川甘边发展，1935年 3月28日至　4月28日取得强渡嘉陵江战役的重大胜利。然而红四方面军主要领导人张国焘等擅自决定放弃川陕根据地（亦称川陕苏区）向西转移。5月初，共八万余人开始长征，中旬占领了茂县（今茂汶）、理番（今理县）为中心的广大地区。</br>
+
+　　红一、四方面军会师后，红军以北上建立川陕甘根据地为战略方针，中共中央决定将两个方面军混合编为左、右两路军过草地北上。中共中央随右路军跨过草地，抵达班佑、巴西地区。8月底，右路军一部在包座全歼国民党军第四十九师约五千余人后，打开了向甘南前进的门户。9月张国焘率左路军到达阿坝地区后，拒绝执行中共中央的北上方针，并要挟中共中央和右路军南下。毛泽东等于9月10日急率第一、第三军（后组成陕甘支队）继续北上，夺取腊子口，突破国民党军渭河封锁线，经固原翻越六盘山，于10月19日到达陕北吴起镇（今吴旗县城），先期结束了长征。11月21～24日取得了直罗镇战役的胜利，为党中央和红军扎根在陕北奠定了基础。</br>
+
+　　在国民党重兵对鄂豫皖根据地围攻的情况下，红二十五军和鄂豫皖省委按照中共中央指示，于1934年11月从河南罗山县开始西移，在鄂豫陕边建立根据地，粉碎国民党军两次“围剿”。次年7月过陇东，9月与陕甘根据地的第二十六、二十七军会师，合编为第十五军团。第一、三军团到达后，与之合编为红一方面军。</br>
+
+　　在湘鄂川黔根据地的红军二、六军团，于1935年11月从湖南桑植出发，转战湖南、贵州、云南三省，击溃国民党军的拦截，渡过金沙江，经西康、四川，于1936年6月底至甘孜，与张国焘率领的南下受挫的红四方面军会师。二、六军团合组为二方面军。7月，二、四方面军共同北上，在红一方面军接应下，10月先后在甘肃省会宁县城和静宁县将台堡与红一方面军会师，至此，红军长征结束。（可参考电视剧《长征》）1933年10月中华民国国民政府动员近100万国民革命军围剿各中国共产党控制的农村根据地，并以50万兵力重点进攻中央苏区（中华苏维埃共和国主要控制地区）。</br>
+
+　　在前四次战役中，由于实施毛泽东的运动战方针，国民政府军没有达到预定目标，均以撤退告终。在第五次战役中，由于毛泽东失去领导权，中共临时中央负责人博古（原名秦邦宪）采纳德国军事顾问李德的建议，放弃过去四次反“围剿”斗争的积极防御方针，将这场战争定性为国共之间的决战，采用军事冒险主义，提出了“御敌于国门之外”的口号，要求红军在根据地之外抵抗国民革命军，决定在国民党之前抢先行动，发动所有红军展开全面进攻，并争取苏维埃在全中国的胜利。但中央苏区只有10万左右的正规军和数万游击队，在抢先进攻后不久即遭到巨大损失。这时共产党方面决定进行阵地防御，辅以“短促突击”（短距攻击），意图抵挡国民革命军的前进。但这个行动并没有起到应有的作用。不久，中华苏维埃共和国首府瑞金的北大门广昌陷落，红军死伤一万余人。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+        <p>&copy; 2016马辉制作 </p>
+    </footer>
+
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#ad-carousel').carousel();
+        $('#menu-nav .navbar-collapse a').click(function (e) {
+            var href = $(this).attr('href');
+            var tabId = $(this).attr('data-tab');
+            if ('#' !== href) {
+                e.preventDefault();
+                $(document).scrollTop($(href).offset().top - 70);
+                if (tabId) {
+                    $('#feature-tab a[href=#' + tabId + ']').tab('show');
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
